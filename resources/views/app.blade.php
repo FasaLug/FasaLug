@@ -21,7 +21,7 @@
     <div class="mx-3">
         <div
             class="nav mx-auto mt-3 shadow-md  px-4 bg-white rounded w-full min-h-[65px] max-w-[1440px] flex items-center justify-between">
-            <div class="text-xl font-bold select-none">لاگ فسا | گروه کاربران لینوکس فسا </div>
+            <div class="text-xl font-bold select-text">لاگ فسا | گروه کاربران لینوکس فسا </div>
             <div class="flex gap-3 select-none">
                 <div
                     class="bg-slate-100 hover:bg-slate-200 transition-colors text-black font-bold rounded p-2 flex items-center gap-1 cursor-pointer">
@@ -51,9 +51,9 @@
     <div class="pinglug relative select-none right-0 top-48 rounded-l-xl bg-white w-[800px] min-h-[30rem]">
         <div class="pt-16 px-7 w-full !z-[999] relative">
             <div>
-                <div class="text-5xl font-medium text-gray-800">گروه کاربران لینوکس فسا</div>
+                <div class="text-5xl font-medium text-gray-800 select-text">گروه کاربران لینوکس فسا</div>
                 <div class="w-[600px] pt-10">
-                    <div class="text-2xl font-medium text-gray-900">لاگ یا گروه کاربران لینوکس فسا گروهی مستقل و مردم
+                    <div class="text-2xl font-medium text-gray-900 select-text">لاگ یا گروه کاربران لینوکس فسا گروهی مستقل و مردم
                         نهاد است که در زمینه گنو / لینوکس و نرم افزار های آزاد فعالیت میکند</div>
                     <div class="pt-8 flex justify-end ml-20 gap-3">
                         <div
@@ -91,6 +91,12 @@
 
                 <div class="swiper-wrapper">
 
+                    <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide1.png" alt=""></div>
+                    <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide1.png" alt=""></div>
+                    <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide1.png" alt=""></div>
+                    <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide1.png" alt=""></div>
                     <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide1.png" alt=""></div>
                     <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide2.jpg" alt=""></div>
                     <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide1.png" alt=""></div>
