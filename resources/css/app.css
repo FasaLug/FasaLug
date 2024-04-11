@@ -44,3 +44,20 @@ body {
     right: 0;
     background: linear-gradient(to left, rgba(255, 255, 255, 0.729), rgba(255, 255, 255, 0.729), transparent 100%);
 }
+
+.insta-gran{
+    background: #833ab4;
+  background: linear-gradient(
+    to right,
+    #9037cb,#ff3434,#f27430
+  );
+  opacity: 1;
+}
+.insta-gran:hover{
+    background: linear-gradient(
+        to right,
+        #9037cb,#ff3434,#f27430
+      );
+      opacity: .9;
+
+}
