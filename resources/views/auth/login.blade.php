@@ -21,7 +21,7 @@
     <body>
         <div class="container">
             <div class="w-full h-[100vh] flex flex-col justify-center items-center">
-                <div class="text-3xl font-bold mb-2">ورود</div>
+                <div class="text-3xl font-bold mb-2">ورود </div>
                 <x-auth-session-status class="mb-4" :status="session('status')" />
 
     <form method="POST" class="bg-white p-3 rounded min-w-[300px]" action="{{ route('login') }}">
