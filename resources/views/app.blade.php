@@ -49,19 +49,25 @@
     </div>
 
     <div class="pinglug relative select-none right-0 top-48 rounded-l-xl bg-white w-[800px] min-h-[30rem]">
-        <div class="pt-16 px-7 w-full">
+        <div class="pt-16 px-7 w-full !z-[999] relative">
             <div>
                 <div class="text-5xl font-medium text-gray-800">گروه کاربران لینوکس فسا</div>
                 <div class="w-[600px] pt-10">
                     <div class="text-2xl font-medium text-gray-900">لاگ یا گروه کاربران لینوکس فسا گروهی مستقل و مردم نهاد است که در زمینه گنو / لینوکس و نرم افزار های آزاد فعالیت میکند</div>
                     <div class="pt-8 flex justify-end ml-20 gap-3">
-                        <div class="insta-gran flex gap-2 items-center hover:bg-slate-200  text-white transition-all font-bold rounded px-5 p-3 w-fit">
+                        <div class="bg-blue-500 hover:bg-blue-600 flex gap-2 items-center text-white transition-all font-bold rounded px-5 p-3 w-fit cursor-pointer">
+                            <iconify-icon width="1.3rem" icon="line-md:telegram"></iconify-icon>
+                            <span>تلگرام</span>
+
+
+                        </div>
+                        <div class="insta-gran flex gap-2 items-center   text-white transition-all font-bold rounded px-5 p-3 w-fit cursor-pointer">
                             <iconify-icon width="1.3rem" icon="line-md:instagram"></iconify-icon>
                             <span>اینستاگرام</span>
 
 
                         </div>
-                        <div class="bg-gray-900 flex gap-2 items-center hover:bg-gray-950  text-white transition-all font-bold rounded p-3 px-5 w-fit">
+                        <div class="bg-gray-900 flex gap-2 items-center hover:bg-gray-950  text-white transition-all font-bold rounded p-3 px-5 w-fit cursor-pointer">
                             <iconify-icon width="1.3rem" icon="line-md:github"></iconify-icon>
                             <span>گیتهاب</span>
                         </div>
