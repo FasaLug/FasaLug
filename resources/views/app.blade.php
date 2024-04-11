@@ -20,7 +20,7 @@
     <div class="fade-in right"></div>
     <div class="mx-3">
         <div
-        class="nav mx-auto mt-3 shadow-md px-4 bg-white rounded w-full min-h-[65px] max-w-[1440px] flex items-center justify-between">
+        class="nav mx-auto mt-3 shadow-md  px-4 bg-white rounded w-full min-h-[65px] max-w-[1440px] flex items-center justify-between">
         <div class="text-xl font-bold select-none">لاگ فسا | گروه کاربران لینوکس فسا </div>
         <div class="flex gap-3 select-none">
             <div
@@ -36,13 +36,19 @@
                 <span>رویداد های اخیر</span>
 
             </div>
+            <div
+                class="bg-slate-100 hover:bg-slate-200 transition-colors text-black font-bold rounded p-2 flex items-center gap-1 cursor-pointer">
+                <iconify-icon width="1.3rem" icon="fluent:window-dev-tools-24-filled"></iconify-icon>
+                <span>تیم اجرایی</span>
+
+            </div>
         </div>
 
 
     </div>
     </div>
 
-    <div class="pinglug shadow-lg relative select-none right-0 top-48 rounded-l-xl bg-white w-[800px] min-h-[30rem]">
+    <div class="pinglug relative select-none right-0 top-48 rounded-l-xl bg-white w-[800px] min-h-[30rem]">
         <div class="pt-16 px-7 w-full">
             <div>
                 <div class="text-5xl font-medium text-gray-800">گروه کاربران لینوکس فسا</div>

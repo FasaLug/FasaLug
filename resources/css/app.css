@@ -5,16 +5,22 @@
 body {
     direction: rtl;
     font-family: "Vazirmatn", sans-serif;
-    background-color: #f7f7f7;
+    background-color: #f8f8f9;
     opacity: 1;
     background-image: linear-gradient(#ffffff63 1.6px, transparent 1.6px),
-        linear-gradient(to right, #ffffff62 1.6px, #e5e5f771 1.6px);
+        linear-gradient(to right, #ffffff62 1.6px, #f1f1fb71 1.6px);
     background-size: 72px 72px;
 }
-.nav{
+.nav {
     position: sticky;
 }
-.pinglug,.nav{
+.pinglug {
+    -webkit-box-shadow: -20px 6px 77px 0px rgba(225 ,29 ,72, 0.5);
+    -moz-box-shadow: -20px 6px 77px 0px rgba(225,29 ,72 ,0.5);
+    box-shadow: -20px 6px 77px 0px rgba(225, 29, 72, 0.5);
+}
+.pinglug,
+.nav {
     z-index: 999;
 }
 @media (max-width: 930px) {
@@ -23,20 +29,18 @@ body {
         border-radius: 0px;
     }
 }
-.fade-in{
+.fade-in {
     content: "";
     position: absolute;
     top: 0;
     width: 20%; /* Adjust as needed */
     height: 100%; /* Or adjust to match the height of the container */
-
-    ;
 }
-.fade-in.left{
+.fade-in.left {
     left: 0;
-    background: linear-gradient(to right, white 0%, white 20%, transparent 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.729), rgba(255, 255, 255, 0.729), transparent 100%);
 }
-.fade-in.right{
+.fade-in.right {
     right: 0;
-    background: linear-gradient(to left, white 0%, white 20%, transparent 100%);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.729), rgba(255, 255, 255, 0.729), transparent 100%);
 }
