@@ -6,9 +6,9 @@ import 'swiper/css/bundle';
 
 var swiper = new Swiper(".swiper", {
     effect: "coverflow",
+    slidesPerView: 3,
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: "auto",
     coverflowEffect: {
       rotate: 50,
       stretch: 0,

@@ -86,26 +86,18 @@
 
 
     </div>
-    <div class="absolute !z-[999] rounded-r-xl shadow-lg left-1 top-48 bg-white w-[800px] min-h-[30rem]">
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                ...
+    <div class="absolute !z-[999]  left-20 top-72  w-[900px] min-h-[30rem]">
+            <div class="swiper min-h-[30rem]">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide1.png" alt=""></div>
+                    <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide1.png" alt=""></div>
+                </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
 
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-        </div>
     </div>
 
 
