@@ -68,6 +68,7 @@ body {
   }
   .swiper-3d .swiper-wrapper{
     align-items: center!important;
+    padding: 10px;
   }
   .swiper-slide {
     background-position: center;
