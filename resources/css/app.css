@@ -94,3 +94,29 @@ body {
 -moz-box-shadow: 0px 200px 161px -153px rgba(0,0,0,0.46);
 box-shadow: 0px 200px 161px -153px rgba(0,0,0,0.46);
   }
+.btn{
+    @apply rounded-lg;
+    @apply bg-blue-50;
+    @apply shadow-sm;
+    @apply shadow-blue-200;
+    @apply hover:bg-blue-200;
+    @apply text-gray-950;
+    @apply cursor-pointer;
+    @apply select-none;
+    @apply p-3;
+    @apply font-bold;
+    @apply text-[1rem];
+}
+.btn.logout{
+    @apply rounded-lg;
+    @apply bg-rose-50;
+    @apply shadow-sm;
+    @apply shadow-rose-200;
+    @apply hover:bg-rose-200;
+    @apply text-gray-950;
+    @apply cursor-pointer;
+    @apply select-none;
+    @apply p-3;
+    @apply font-bold;
+    @apply text-[1rem];
+}

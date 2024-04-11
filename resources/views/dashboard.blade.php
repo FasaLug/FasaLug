@@ -19,19 +19,42 @@
     </style>
 
     <body>
-        <div class="fade-in left"></div>
-    <div class="fade-in right"></div>
+
         <div class="container relative !z-[999]">
             <div class="bg-white p-5 rounded-b-lg ">
                 <div class="flex justify-between items-center">
                     <span class="font-bold">خوش آمدید!</span>
                     <div class="profile-info flex items-center  gap-2">
                         <iconify-icon width="1.4rem" icon="ri:user-6-line"></iconify-icon>
-                        <span>{{ auth()->user()->name }}</span>
+                        <span class="font-bold">{{ auth()->user()->name }}</span>
 
                     </div>
                 </div>
 
+            </div>
+            <div class="bg-gray-200 p-10  rounded-t-lg shadow-xl overflow-hidden mt-10 h-[90vh]">
+                <div class="flex flex-row gap-3">
+                    <div class="bg-slate-100 h-[80vh] flex flex-col justify-between rounded-lg min-w-[20rem]  p-3">
+                        <div class="flex gap-2 flex-col">
+                            <div class="btn flex items-center gap-2">
+
+                                <iconify-icon width="1.3rem" icon="pajamas:dashboard"></iconify-icon>
+                                <span>داشبورد</span>
+                            </div>
+                            <div class="btn flex items-center gap-2">
+                                <iconify-icon width="1.3rem" icon="material-symbols:event-note-outline"></iconify-icon>
+                                <span>رویداد های من</span>
+                            </div>
+                            <div class="btn">
+                                <iconify-icon width="1.3rem" icon="tabler:edit"></iconify-icon>
+                                <span>پروفایل کاربری</span>
+                            </div>
+
+                        </div>
+                        <div class="btn logout ">خروج از حساب کاربری</div>
+                    </div>
+                    <div class="bg-slate-100 h-[80vh] rounded-lg flex-grow">test</div>
+                </div>
             </div>
 
             </div>
