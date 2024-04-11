@@ -93,13 +93,6 @@
 
                     <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide1.png" alt=""></div>
                     <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide2.jpg" alt=""></div>
-                    <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide1.png" alt=""></div>
-                    <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide1.png" alt=""></div>
-                    <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide2.jpg" alt=""></div>
-                    <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide1.png" alt=""></div>
-                    <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide1.png" alt=""></div>
-                    <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide2.jpg" alt=""></div>
-                    <div class="swiper-slide"><img class="w-full h-full" src="/assets/slide1.png" alt=""></div>
                 </div>
             </div>
 
