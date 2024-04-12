@@ -27,7 +27,7 @@
                     </div>
                     <div class="profile-info flex items-center  gap-2">
                         <iconify-icon width="1.4rem" icon="ri:user-6-line"></iconify-icon>
-                        <span class="font-bold">{{ auth()->user()->name }}</span>
+                        <span class="font-bold">{{ auth()->user()->firstname }} {{ auth()->user()->lastname }}</span>
 
                     </div>
                 </div>
