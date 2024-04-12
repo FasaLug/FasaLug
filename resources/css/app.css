@@ -10,7 +10,6 @@ body {
     background-image: linear-gradient(#ffffff63 1.6px, transparent 1.6px),
         linear-gradient(to right, #ffffff62 1.6px, #f1f1fb71 1.6px);
     background-size: 72px 72px;
-    overflow-x: hidden;
 }
 .nav {
     position: sticky;

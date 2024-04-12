@@ -1,7 +1,5 @@
 
     <!-- Session Status -->
-
-
     <!DOCTYPE html>
     <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -21,9 +19,12 @@
     <body>
 
         <div class="container relative !z-[999]">
-            <div class="bg-white p-5 rounded-b-lg ">
+            <div class="bg-white p-4 rounded-b-lg ">
                 <div class="flex justify-between items-center">
-                    <span class="font-bold">خوش آمدید!</span>
+                    <div class="flex items-center select-none">
+                        <iconify-icon width="1.5rem" icon="gravity-ui:logo-linux"></iconify-icon>
+                        <span class="font-semibold">لاگ فسا | گروه کاربران لینوکسی فسا</span>
+                    </div>
                     <div class="profile-info flex items-center  gap-2">
                         <iconify-icon width="1.4rem" icon="ri:user-6-line"></iconify-icon>
                         <span class="font-bold">{{ auth()->user()->name }}</span>
@@ -32,23 +33,27 @@
                 </div>
 
             </div>
-            <div class="bg-gray-200 p-10  rounded-t-lg shadow-xl overflow-hidden mt-10 h-[90vh]">
+            <div class="bg-gray-200 p-10 relative overflow-hidden rounded-t-lg shadow-xl mt-10 h-[90vh]">
+                <a href="/" class="absolute left-10 top-[-1.3rem] flex items-center gap-2 bg-gray-950 hover:scale-95 transition-all pt-7 pb-1 px-2 p-3 rounded text-white select-none">
+                <iconify-icon width="1.3rem" icon="mingcute:back-2-fill"></iconify-icon>
+                <span>بازگشت به صفحه اصلی</span>
+                </a>
                 <div class="flex flex-row gap-3">
                     <div class="bg-slate-100 h-[80vh] flex flex-col justify-between rounded-lg min-w-[20rem]  p-3">
                         <div class="flex gap-2 flex-col">
-                            <div class="btn flex items-center gap-2">
+                            <a href="{{ route('dashboard') }}" class="btn !bg-blue-200 flex items-center gap-2">
 
                                 <iconify-icon width="1.3rem" icon="pajamas:dashboard"></iconify-icon>
                                 <span>داشبورد</span>
-                            </div>
+                            </a>
                             <div class="btn flex items-center gap-2">
                                 <iconify-icon width="1.3rem" icon="material-symbols:event-note-outline"></iconify-icon>
                                 <span>رویداد های من</span>
                             </div>
-                            <div class="btn flex items-center gap-2">
+                            <a href="{{ route('profile.edit') }}" class="btn flex items-center gap-2">
                                 <iconify-icon width="1.3rem" icon="tabler:edit"></iconify-icon>
                                 <span>پروفایل کاربری</span>
-                            </div>
+                            </a>
 
                         </div>
                         <div class="btn logout flex items-center gap-2">
