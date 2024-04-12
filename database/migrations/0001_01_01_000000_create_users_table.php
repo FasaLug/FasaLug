@@ -23,6 +23,10 @@ return new class extends Migration
             $table->string('university_name')->nullable();
             $table->string('student_id')->nullable();
             $table->string('study_field')->nullable();
+            $table->string('linkedin')->nullable();
+            $table->string('github')->nullable();
+            $table->string('instagram')->nullable();
+            $table->string('telegram')->nullable();
             $table->string('phonenumber')->unique();
             $table->timestamp('phonenumber_verified_at')->nullable();
             $table->string('email')->unique();
