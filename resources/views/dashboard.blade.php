@@ -45,13 +45,16 @@
                                 <iconify-icon width="1.3rem" icon="material-symbols:event-note-outline"></iconify-icon>
                                 <span>رویداد های من</span>
                             </div>
-                            <div class="btn">
+                            <div class="btn flex items-center gap-2">
                                 <iconify-icon width="1.3rem" icon="tabler:edit"></iconify-icon>
                                 <span>پروفایل کاربری</span>
                             </div>
 
                         </div>
-                        <div class="btn logout ">خروج از حساب کاربری</div>
+                        <div class="btn logout flex items-center gap-2">
+                            <iconify-icon width="1.3rem" icon="material-symbols:logout"></iconify-icon>
+                            <span>خروج از حساب</span>
+                        </div>
                     </div>
                     <div class="bg-slate-100 h-[80vh] rounded-lg flex-grow">test</div>
                 </div>

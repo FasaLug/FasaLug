@@ -21,7 +21,12 @@
     <div class="mx-3">
         <div
             class="nav mx-auto mt-3 shadow-md  px-4 bg-white rounded w-full min-h-[65px] max-w-[1440px] flex items-center justify-between">
-            <div class="text-xl font-bold select-text">لاگ فسا | گروه کاربران لینوکس فسا </div>
+            <div class="text-xl font-bold select-text flex gap-2 items-center">
+                <iconify-icon width="2rem" icon="gravity-ui:logo-linux"></iconify-icon>
+                <span>لاگ فسا | گروه کاربران لینوکس فسا</span>
+
+
+            </div>
             <div class="flex gap-3 select-none">
                 <div
                     class="bg-slate-100 hover:bg-slate-200 transition-colors text-black font-bold rounded p-2 flex items-center gap-1 cursor-pointer">
