@@ -28,12 +28,21 @@
 
             </div>
             <div class="flex gap-3 select-none">
+                @if(!auth()->check())
                 <a href="{{ route('login') }}"
                     class="bg-slate-100 hover:bg-slate-200 transition-colors text-black font-bold rounded p-2 flex items-center gap-1 cursor-pointer">
                     <iconify-icon width="1.3rem" icon="solar:user-linear"></iconify-icon>
                     <span>ورود/ثبت نام</span>
 
                 </a>
+                @else
+                <a href="{{ route('dashboard') }}"
+                class="bg-slate-100 hover:bg-slate-200 transition-colors text-black font-bold rounded p-2 flex items-center gap-1 cursor-pointer">
+                <iconify-icon width="1.3rem" icon="solar:user-linear"></iconify-icon>
+                <span>پنل کاربری</span>
+
+            </a>
+                @endif
 
                 <div
                     class="bg-slate-100 hover:bg-slate-200 transition-colors text-black font-bold rounded p-2 flex items-center gap-1 cursor-pointer">
