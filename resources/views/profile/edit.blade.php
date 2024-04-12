@@ -57,10 +57,10 @@
                             </div>
 
                         </div>
-                        <div class="btn logout flex items-center gap-2">
+                        <a href="{{ route('g.logout') }}" class="btn logout flex items-center gap-2">
                             <iconify-icon width="1.3rem" icon="material-symbols:logout"></iconify-icon>
                             <span>خروج از حساب</span>
-                        </div>
+                        </a>
                     </div>
                     <div class="bg-slate-100 rounded-lg flex-grow">
                         <div class="py-12">

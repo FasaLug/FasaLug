@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>FasaLUG /  پنل کاربری</title>
+        <title>FasaLUG /  پنل مدیریت</title>
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=poppins:500|vazirmatn:100,200,300,400,500,600,700,800,900"
@@ -23,7 +23,7 @@
                 <div class="flex justify-between items-center">
                     <div class="flex items-center select-none">
                         <iconify-icon width="1.5rem" icon="gravity-ui:logo-linux"></iconify-icon>
-                        <span class="font-semibold">لاگ فسا | گروه کاربران لینوکسی فسا</span>
+                        <span class="font-semibold">ADPANEL V.1</span>
                     </div>
                     <div class="profile-info flex items-center  gap-2">
                         <iconify-icon width="1.4rem" icon="ri:user-6-line"></iconify-icon>
@@ -39,7 +39,7 @@
             <div class="bg-gray-200 p-10 relative overflow-hidden rounded-t-lg shadow-xl mt-10 h-[90vh]">
                 <a href="/" class="absolute left-10 top-[-1.3rem] flex items-center gap-2 bg-gray-950 hover:scale-95 transition-all pt-7 pb-1 px-2 p-3 rounded text-white select-none">
                 <iconify-icon width="1.3rem" icon="mingcute:back-2-fill"></iconify-icon>
-                <span>بازگشت به صفحه اصلی</span>
+                <span>بازگشت به پنل کاربری</span>
                 </a>
                 <div class="flex flex-row gap-3">
                     <div class="bg-slate-100 h-[80vh] flex flex-col justify-between rounded-lg min-w-[20rem]  p-3">
@@ -49,21 +49,7 @@
                                 <iconify-icon width="1.3rem" icon="pajamas:dashboard"></iconify-icon>
                                 <span>داشبورد</span>
                             </a>
-                            @if(auth()->user()->role === env('FSLOG_ADMIN'))
-                            <a href="{{ route('ad.panel') }}" class="btn flex items-center gap-2">
 
-                                <iconify-icon width="1.3rem" icon="grommet-icons:user-admin"></iconify-icon>
-                                <span>پنل ادمین</span>
-                            </a>
-                            @endif
-                            <div class="btn flex items-center gap-2">
-                                <iconify-icon width="1.3rem" icon="material-symbols:event-note-outline"></iconify-icon>
-                                <span>رویداد های من</span>
-                            </div>
-                            <a href="{{ route('profile.edit') }}" class="btn flex items-center gap-2">
-                                <iconify-icon width="1.3rem" icon="tabler:edit"></iconify-icon>
-                                <span>پروفایل کاربری</span>
-                            </a>
 
                         </div>
                         <a href="{{ route('g.logout') }}" class="btn logout flex items-center gap-2">
@@ -77,7 +63,7 @@
                                 <div class="space-y-2">
                                     <div
                                         class="flex items-center justify-between space-x-2 rtl:space-x-reverse text-sm font-medium text-gray-500">
-                                        <span>رویداد های من</span>
+                                        <span>لیست کابران</span>
                                         <div class="flex items-center">
                                             <iconify-icon width="2.1rem" icon="mdi:events"></iconify-icon>
                                         </div>
@@ -85,25 +71,20 @@
 
                                     <div class="flex justify-evenly gap-2">
                                         <div class="flex flex-col text-center">
-                                            <div class="numb text-xl">0</div>
-                                            <div class="info text-xs">رویداد های ثبت نام شده</div>
+                                            <div class="numb text-xl">{{ count($users) }}</div>
+                                            <div class="info text-xs">تمامی کاربران سایت</div>
                                         </div>
                                         <div class="flex flex-col text-center">
-                                            <div class="numb text-xl">0</div>
-                                            <div class="info text-xs">رویداد های حاضر</div>
+                                            <div class="numb text-xl">{{ count($eventmanger) }}</div>
+                                            <div class="info text-xs">تعداد مدیران رویداد</div>
                                         </div>
                                         <div class="flex flex-col text-center">
-                                            <div class="numb text-xl">0</div>
-                                            <div class="info text-xs">رویداد های غایب</div>
+                                            <div class="numb text-xl">{{ count($admin) }}</div>
+                                            <div class="info text-xs">مدیرکل</div>
                                         </div>
                                     </div>
 
-                                    <div class="flex pt-5 items-center space-x-1 rtl:space-x-reverse text-sm font-medium text-green-600 select-none">
-                                        <iconify-icon  width="1.3rem" icon="ant-design:rise-outlined"></iconify-icon>
-                                        <span>شما در 32% رویداد ها شرکت کرده اید</span>
 
-
-                                    </div>
                                 </div>
                             </a>
 
@@ -111,10 +92,10 @@
                                 <div class="space-y-2">
                                     <div
                                         class="flex items-center justify-between space-x-2 rtl:space-x-reverse text-sm font-medium text-gray-500">
-                                        <span>پروفایل کاربری</span>
+                                        <span>وضعیت وبسایت</span>
                                         <div class="flex items-center">
-                                            <iconify-icon width="2.1rem" icon="tabler:user-edit"></iconify-icon>
-                                            {{-- <img class="w-[70px] h-[70px] rounded-full shadow-xl" src="/assets/pinguin.png" alt=""> --}}
+                                            <iconify-icon width="2.1rem" icon="heroicons-outline:status-online"></iconify-icon>
+
                                         </div>
 
                                     </div>
