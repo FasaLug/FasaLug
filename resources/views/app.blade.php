@@ -1,4 +1,18 @@
+
 <!DOCTYPE html>
+<!--
+
+╭━━━┳━━━┳━━━┳━━━┳╮╱╱╭╮╱╭┳━━━╮
+┃╭━━┫╭━╮┃╭━╮┃╭━╮┃┃╱╱┃┃╱┃┃╭━╮┃
+┃╰━━┫┃╱┃┃╰━━┫┃╱┃┃┃╱╱┃┃╱┃┃┃╱╰╯
+┃╭━━┫╰━╯┣━━╮┃╰━╯┃┃╱╭┫┃╱┃┃┃╭━╮
+┃┃╱╱┃╭━╮┃╰━╯┃╭━╮┃╰━╯┃╰━╯┃╰┻━┃
+╰╯╱╱╰╯╱╰┻━━━┻╯╱╰┻━━━┻━━━┻━━━╯
+ Thank you for using FasaLUG!
+ If you are reading this message... how about joining the development?
+ https://github.com/fasalug/fasalug
+
+-->
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
@@ -22,7 +36,7 @@
             <div class="text-xl font-bold select-text flex gap-2 items-center">
                 <iconify-icon width="2rem" icon="gravity-ui:logo-linux"></iconify-icon>
                 <span class="logotype">لاگ فسا | گروه کاربران لینوکس فسا</span>
-
+                <span class="logotype-sm">لاگ فسا</span>
 
             </div>
             <div class="gap-3 select-none hidden xl:flex">
@@ -64,14 +78,14 @@
 
         </div>
     </div>
-    <div class="flex items-center gap-10 flex-col 2xl:gap-0 2xl:flex-row justify-between flex-grow mt-5 2xl:mt-40 mx-3 2xl:mx-0">
+    <div class="flex items-center gap-10 flex-col 2xl:gap-0 2xl:flex-row justify-between flex-grow my-5 2xl:mt-40 mx-3 2xl:mx-0">
         <div class="pinglug select-none relative justify-between 2xl:justify-center  bg-white w-full 2xl:w-[800px] min-h-[424px] flex flex-col-reverse lg:flex-row items-center 2xl:pr-5 p-16 overflow-hidden 2xl:overflow-visible">
             <div class="2xl:px-7 w-full !z-[999] relative flex flex-col  2xl:flex-row">
                 <div>
                     <div class="text-5xl font-black text-gray-800 select-text text-center 2xl:text-right">گروه کاربران لینوکس فسا</div>
                     <div class="2xl:w-[600px] pt-10">
-                        <div class="text-2xl font-medium text-gray-900 select-text text-center 2xl:text-right">لاگ یا گروه کاربران لینوکس فسا گروهی مستقل و مردم
-                            نهاد است که در زمینه گنو / لینوکس و نرم افزار های آزاد فعالیت میکند</div>
+                        <div class="text-2xl font-extrabold text-gray-900 select-text text-center 2xl:text-right">لاگ یا گروه کاربران لینوکس فسا گروهی مستقل و مردم
+                            نهاد است که در زمینه گنو ، لینوکس و نرم افزار های آزاد فعالیت میکند</div>
                         <div class="pt-8 flex flex-col md:flex-row justify-evenly 2xl:justify-end 2xl:ml-20 gap-3">
                             <a href="https://t.me/FasaLUG"
                                 class="bg-blue-500 hover:bg-blue-600 flex gap-2 items-center text-white transition-all font-bold rounded px-5 p-3 w-full md:w-fit cursor-pointer">

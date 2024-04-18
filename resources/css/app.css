@@ -32,6 +32,7 @@ body {
     padding: 0;
     box-sizing: content-box;
 }
+
 .nav {
     position: sticky;
 }
@@ -55,10 +56,19 @@ body {
 .logotype{
     font-weight: 900;
 }
+.logotype-sm{
+    display: none;
+    visibility: hidden;
+    font-weight: 900;
+}
 @media(max-width:500px){
     .logotype{
         display: none;
         visibility: hidden;
+    }
+    .logotype-sm{
+        display: block;
+        visibility: visible;
     }
     .pinglug img{
         height: auto!important;
