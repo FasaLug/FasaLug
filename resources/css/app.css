@@ -1,8 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+html{
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    font-family: "Vazirmatn", sans-serif;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-tap-highlight-color: transparent;
+}
 body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    line-height: inherit;
     direction: rtl;
     font-family: "Vazirmatn", sans-serif;
     background-color: #f8f8f9;
@@ -10,23 +25,24 @@ body {
     background-image: linear-gradient(#ffffff63 1.6px, transparent 1.6px),
         linear-gradient(to right, #ffffff62 1.6px, #f1f1fb71 1.6px);
     background-size: 72px 72px;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
 }
 .nav {
     position: sticky;
 }
-.pinglug {
-    -webkit-box-shadow: -20px 6px 77px 0px rgba(225 ,29 ,72, 0.5);
-    -moz-box-shadow: -20px 6px 77px 0px rgba(225,29 ,72 ,0.5);
-    box-shadow: -20px 6px 77px 0px rgba(225, 29, 72, 0.5);
-}
+
 .pinglug,
 .nav {
     z-index: 999;
 }
-@media (max-width: 930px) {
+@media (min-width: 1536px) {
     .pinglug {
-        width: 100%;
-        border-radius: 0px;
+        -webkit-box-shadow: -20px 6px 77px 0px rgba(225 ,29 ,72, 0.5);
+        -moz-box-shadow: -20px 6px 77px 0px rgba(225,29 ,72 ,0.5);
+        box-shadow: -20px 6px 77px 0px rgba(225, 29, 72, 0.5);
+
     }
 }
 .fade-in {
@@ -67,26 +83,21 @@ body {
     padding-bottom: 50px;
     user-select: none;
   }
-  .swiper-3d{
-
+  .swiper-wrapper{
+    transform: translate3d(0px, 0, 0)!important;
   }
   .swiper-3d .swiper-wrapper{
     align-items: center!important;
     padding: 10px;
   }
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    min-width: 320px;
-    height: 424px;
-  }
-  .swiper-slide img {
+
+  .slide img {
     display: block;
     width: 100%;
     min-width: 320px;
+    max-width: 320px;
     min-height: 424px;
-
+    max-height: 424px;
     height: 100%;
     border-radius: .5rem;
     -webkit-box-shadow: 0px 200px 161px -153px rgba(0,0,0,0.46);

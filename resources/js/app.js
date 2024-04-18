@@ -5,17 +5,9 @@ import 'swiper/css/bundle';
 
 
 var swiper = new Swiper(".swiper", {
-    effect: "coverflow",
-    slidesPerView: 3,
+    slidesPerView: 2,
     grabCursor: true,
     centeredSlides: true,
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
     pagination: {
       el: ".swiper-pagination",
     },
