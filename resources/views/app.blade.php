@@ -18,10 +18,10 @@
 <body id="app">
     <div class="mx-3">
         <div
-            class="nav mx-auto mt-3 shadow-md  px-4 bg-white rounded w-full min-h-[65px] max-w-[1440px] flex items-center justify-between">
+            class="nav mx-auto mt-3 px-4 bg-white rounded w-full min-h-[65px] max-w-[1440px] flex items-center justify-between">
             <div class="text-xl font-bold select-text flex gap-2 items-center">
                 <iconify-icon width="2rem" icon="gravity-ui:logo-linux"></iconify-icon>
-                <span>لاگ فسا | گروه کاربران لینوکس فسا</span>
+                <span class="logotype">لاگ فسا | گروه کاربران لینوکس فسا</span>
 
 
             </div>
@@ -56,16 +56,19 @@
                 </div>
             </div>
             <div class="block xl:hidden">
-                test
+                <div
+                    class="bg-slate-100 hover:bg-slate-200 transition-colors text-black font-bold rounded p-2 flex items-center gap-1 cursor-pointer">
+                    <iconify-icon icon="mingcute:menu-line"></iconify-icon>
+                </div>
             </div>
 
         </div>
     </div>
-    <div class="flex items-center gap-10 flex-col 2xl:gap-0 2xl:flex-row justify-between flex-grow mt-10 2xl:mt-40 mx-3 2xl:mx-0">
-        <div class="pinglug select-none relative justify-between 2xl:justify-center !rounded-xl 2xl:!rounded-l-xl bg-white w-full 2xl:w-[800px] min-h-[424px] flex flex-col lg:flex-row items-center 2xl:pr-5 p-16 overflow-hidden 2xl:overflow-visible">
+    <div class="flex items-center gap-10 flex-col 2xl:gap-0 2xl:flex-row justify-between flex-grow mt-5 2xl:mt-40 mx-3 2xl:mx-0">
+        <div class="pinglug select-none relative justify-between 2xl:justify-center  bg-white w-full 2xl:w-[800px] min-h-[424px] flex flex-col-reverse lg:flex-row items-center 2xl:pr-5 p-16 overflow-hidden 2xl:overflow-visible">
             <div class="2xl:px-7 w-full !z-[999] relative flex flex-col  2xl:flex-row">
                 <div>
-                    <div class="text-5xl font-medium text-gray-800 select-text text-center 2xl:text-right">گروه کاربران لینوکس فسا</div>
+                    <div class="text-5xl font-black text-gray-800 select-text text-center 2xl:text-right">گروه کاربران لینوکس فسا</div>
                     <div class="2xl:w-[600px] pt-10">
                         <div class="text-2xl font-medium text-gray-900 select-text text-center 2xl:text-right">لاگ یا گروه کاربران لینوکس فسا گروهی مستقل و مردم
                             نهاد است که در زمینه گنو / لینوکس و نرم افزار های آزاد فعالیت میکند</div>

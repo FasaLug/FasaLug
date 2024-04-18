@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+::selection{
+    background-color: #f27430;
+}
 html{
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
@@ -20,10 +23,10 @@ body {
     line-height: inherit;
     direction: rtl;
     font-family: "Vazirmatn", sans-serif;
-    background-color: #f8f8f9;
+    background-color: #c6b9b96b;
     opacity: 1;
-    background-image: linear-gradient(#ffffff63 1.6px, transparent 1.6px),
-        linear-gradient(to right, #ffffff62 1.6px, #f1f1fb71 1.6px);
+    background-image: linear-gradient(rgba(239, 187, 118, 0.2) 1.6px, transparent 1.6px),
+        linear-gradient(to right, rgba(239, 187, 118, 0.2) 1.6px, #fbf1f1 1.6px);
     background-size: 72px 72px;
     margin: 0;
     padding: 0;
@@ -36,13 +39,29 @@ body {
 .pinglug,
 .nav {
     z-index: 999;
+    border: rgba(239, 187, 118, 0.5) solid 2px;
 }
 @media (min-width: 1536px) {
     .pinglug {
-        -webkit-box-shadow: -20px 6px 77px 0px rgba(225 ,29 ,72, 0.5);
-        -moz-box-shadow: -20px 6px 77px 0px rgba(225,29 ,72 ,0.5);
-        box-shadow: -20px 6px 77px 0px rgba(225, 29, 72, 0.5);
+        /* -webkit-box-shadow: -20px 6px 77px 0px rgba(118, 239, 221, 0.5);
+        -moz-box-shadow: -20px 6px 77px 0px rgba(118, 239, 221, 0.5);
+        box-shadow: -20px 6px 77px 0px rgba(118, 239, 221, 0.5); */
 
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+
+    }
+}
+.logotype{
+    font-weight: 900;
+}
+@media(max-width:500px){
+    .logotype{
+        display: none;
+        visibility: hidden;
+    }
+    .pinglug img{
+        height: auto!important;
     }
 }
 .fade-in {
@@ -100,9 +119,9 @@ body {
     max-height: 424px;
     height: 100%;
     border-radius: .5rem;
-    -webkit-box-shadow: 0px 200px 161px -153px rgba(0,0,0,0.46);
+    /* -webkit-box-shadow: 0px 200px 161px -153px rgba(0,0,0,0.46);
 -moz-box-shadow: 0px 200px 161px -153px rgba(0,0,0,0.46);
-box-shadow: 0px 200px 161px -153px rgba(0,0,0,0.46);
+box-shadow: 0px 200px 161px -153px rgba(0,0,0,0.46); */
   }
 .btn{
     @apply rounded-lg;
