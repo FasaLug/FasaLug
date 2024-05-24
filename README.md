@@ -1,6 +1,6 @@
 ## Overview
 
-FasaLug Website Developed with Laravel 11.3(php 8.2) / Nodejs / Tailwindcss / HTML5 
+FasaLug Website Developed with Laravel 11.3(php 8.3) / Nodejs / Tailwindcss / HTML5 
 
 ## Prerequisites
 
